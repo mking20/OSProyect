@@ -1,2 +1,7 @@
+Contribuidores:
+  Claudia King
+  Fernando Cortez
+  Victor Peralta
+  
 Primer archivo
 Segunda Linea

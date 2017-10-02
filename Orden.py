@@ -4,12 +4,12 @@ meatTypesList = ["asada", "adobada", "cabeza", "lengua", "suadero", "veggie", "t
 
 class Orden:
     def __init__(self, datetime, request_id, subOrdenes):
-        this.datetime = datetime #String
-        this.request_id = request_id #String
-        this.subOrdenes = subOrdenes #List of subOrden objects
-        this.startTime = -1
-        this.endTime = -1
-        this.steps = [] #List of stepObjects that will be inserted
+        self.datetime = datetime #String
+        self.request_id = request_id #String
+        self.subOrdenes = subOrdenes #List of subOrden objects
+        self.startTime = -1
+        self.endTime = -1
+        self.steps = [] #List of stepObjects that will be inserted
 
     def addNewStep(step):
         this.steps.append(step)
@@ -23,17 +23,17 @@ class Orden:
 
 class subOrden:
     def __init__(self, part_id, tacoType, meatType, quantity, ingredients):
-        this.part_id = part_id #String
-        this.tacoType = tacoType #String
-        this.meatType = meatType #String
-        this.quantity = quantity #Integer
-        this.ingredients = ingredients #List of strings
-        this.remainingTacos = quantity #Integer (Counter to keep track of remaining tacos)
+        self.part_id = part_id #String
+        self.tacoType = tacoType #String
+        self.meatType = meatType #String
+        self.quantity = quantity #Integer
+        self.ingredients = ingredients #List of strings
+        self.remainingTacos = quantity #Integer (Counter to keep track of remaining tacos)
 
 class Step:
     def __init__(self, stepNumber, startTime, action):
-        this.stepNumber = stepNumber #Integer
-        this.startTime = startTime #String
-        this.action = action #String
-        this.endTime = -1 #Integer (undefined when the object is created)
+        self.stepNumber = stepNumber #Integer
+        self.startTime = startTime #String
+        self.action = action #String
+        self.endTime = -1 #Integer (undefined when the object is created)
 
